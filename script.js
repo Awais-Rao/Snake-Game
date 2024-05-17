@@ -68,7 +68,7 @@ const initGame = () => {
     //incrementing score by 1
     score++;
 
-    highScore = score >= highScore ? score : score;
+    highScore = score >= highScore ? highScore : score;
     localStorage.setItem("high-score", highScore);
 
     scoreElement.innerText = `Score: ${score}`;
